@@ -2,8 +2,60 @@ resources:
 - name: music-repo
   type: git
   source:
-    uri: https://github.com/Erdk/concourse-spring-music
+    uri: git@github.com:Erdk/concourse-spring-music.git
     branch: master
+    private_key: |
+      -----BEGIN RSA PRIVATE KEY-----
+      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
+      -----END RSA PRIVATE KEY-----
 
 jobs:
 - name: unit
