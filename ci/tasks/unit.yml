@@ -1,8 +1,12 @@
 ---
 platform: linux
 
-image: docker:///datianshi/gradle
-
+image_resource:
+  type: docker-image
+  source:
+    repository: gradle
+    tag: 'latest'
+  
 inputs:
   - name: music-repo
 
