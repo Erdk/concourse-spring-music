@@ -37,3 +37,4 @@ jobs:
   - put: pivotal
     params:
       manifest: music-repo/manifest.yml
+      file: build-output/spring-music-1.0.war

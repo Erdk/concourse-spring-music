@@ -7,4 +7,5 @@ cd music-repo
 gradle assemble
 pwd
 ls -R ..
+cp build/libs/spring-music-1.0.war ../build-output
 #ls build/libs/
