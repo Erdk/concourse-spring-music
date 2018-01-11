@@ -37,4 +37,4 @@ jobs:
   - put: pivotal
     params:
       manifest: build-output/music-repo/manifest.yml
-      path: build-output/music-repo/build/libs/spring-music.war
+      path: build-output/music-repo/build/libs/spring-music-1.0.war

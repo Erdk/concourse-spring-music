@@ -6,5 +6,5 @@ cd music-repo
 #echo $version
 gradle assemble
 pwd
-ls -R
+ls -R ..
 #ls build/libs/
