@@ -11,4 +11,5 @@ inputs:
   - name: music-repo
 
 run:
+  user: root
   path: music-repo/ci/tasks/unit.sh
