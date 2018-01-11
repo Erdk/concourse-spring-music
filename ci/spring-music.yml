@@ -5,9 +5,19 @@ resources:
     uri: git@github.com:Erdk/concourse-spring-music.git
     branch: master
     private_key: ((gh_key)) 
+- name: pivotal
+  type: cf
+  source:
+    api: ((cf_api))
+    organization: (cf_org))
+    username: ((cf_usr))
+    password: ((cf_pass))
+    space: ((cf_space))
+    skip_cert_check: true
 
 jobs:
 - name: unit
+  public: true
   plan:
   - get: music-repo
     trigger: true
@@ -16,6 +26,7 @@ jobs:
 
 - name: build-binary
   serial: true
+  public: true
   plan:
   - get: music-repo
     passed: [unit]
@@ -23,3 +34,7 @@ jobs:
   - task: build-artifact
     file: music-repo/ci/tasks/build-artifact.yml
     timeout: 5m
+  - put: pivotal
+    params:
+      manifest: music-repo/manifest.yml
+      path: music-repo/build/libs/spring-music.war
