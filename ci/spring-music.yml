@@ -9,7 +9,7 @@ resources:
   type: cf
   source:
     api: ((cf_api))
-    organization: (cf_org))
+    organization: ((cf_org))
     username: ((cf_usr))
     password: ((cf_pass))
     space: ((cf_space))
