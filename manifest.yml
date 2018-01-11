@@ -5,4 +5,4 @@ applications:
   host: music
   path: ./spring-music-1.0.war
   services:
-   - newdb
+   - prod_db
