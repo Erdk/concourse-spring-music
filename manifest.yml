@@ -3,5 +3,6 @@ applications:
 - name: spring-music
   memory: 1G
   host: music
+  path: ./spring-music-1.0.war
   services:
    - newdb
