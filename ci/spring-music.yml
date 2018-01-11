@@ -36,5 +36,5 @@ jobs:
     timeout: 5m
   - put: pivotal
     params:
-      manifest: music-repo/manifest.yml
-      path: music-repo/build/libs/spring-music.war
+      manifest: build-output/music-repo/manifest.yml
+      path: build-output/music-repo/build/libs/spring-music.war

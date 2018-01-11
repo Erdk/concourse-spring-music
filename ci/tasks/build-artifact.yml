@@ -10,6 +10,9 @@ image_resource:
 inputs:
   - name: music-repo
 
+outputs:
+  - name: build-output
+
 run:
   user: root
   path: music-repo/ci/tasks/build-artifact.sh
