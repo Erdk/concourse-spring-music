@@ -1,6 +1,13 @@
 [
     {
         "_class": "org.cloudfoundry.samples.music.domain.Album",
+        "artist": "Dimmu Borgir",
+        "title": "In Sorte Diaboli",
+        "releaseYear": "2007",
+        "genre": "Satan"
+    },
+    {
+        "_class": "org.cloudfoundry.samples.music.domain.Album",
         "artist": "Nirvana",
         "title": "Nevermind",
         "releaseYear": "1991",
