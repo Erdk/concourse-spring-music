@@ -65,7 +65,7 @@ public class Album {
     }
 
     public String getGenre() {
-        return "blah blah";
+        return "ble ble";
     }
 
     public void setGenre(String genre) {
